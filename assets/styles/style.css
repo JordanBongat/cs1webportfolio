@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	border-style: border-box;
+} 
+
 img {
 	width: 200px;
 	height: 200px;
@@ -6,4 +12,25 @@ img {
 img.tools {
 	width: 80px;
 	height: 80px;
+}
+
+#navbars {
+	font-size: 15px;
+	color: white;
+	padding: 1rem 0.4rem 0;
+}
+
+p.navbars {
+	display: inline;
+}
+
+div#nav {
+	background-color: #003B6D;
+}
+
+#main {
+	background-image: url(https://images.pexels.com/photos/768938/pexels-photo-768938.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+	height: 100vh;
+	background-size: 100% 100%;
+	background-attachment: fixed;
 }

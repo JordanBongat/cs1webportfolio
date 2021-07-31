@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	border-style: border-box;
+	box-sizing: border-box;
 	scroll-behavior: smooth;
 } 
 
@@ -16,6 +16,7 @@ img.tools {
 	height: 80px;
 }
 
+/*Nav Section*/
 #nav {
 	position: scroll;
 	background-color: #003B6D;
@@ -24,23 +25,47 @@ img.tools {
 }
 
 #navbars {
+	font-family: 'Manjari', sans-serif;
 	font-size: 15px;
 	color: white;
 	padding: 1rem 0.4rem;
 }
 
-#landing , #skills , #portfolio , #contact {
+/*Greetings Section*/
+#landing {
+	background-image: url(../images/background.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	max-width: 100%;
+	min-height: 650px;
+	height: 100vh;
+}
+
+#skills {
+	background-image: url(../images/background.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	max-width: 100%;
+	padding-top: 54px;
+}
+
+#portfolio , #contact {
 	background-image: url(../images/background.png);
 	height: 100vh;
 	background-size: 100% 100%;
 	background-attachment: fixed;
 	padding-top: 54px;
 	max-width: 100%;
+	min-height: 650px;
+}
+
+#intro {
+	min-height: 5px;
 }
 
 #description h2 {
 	text-align: center;
-	font-size: 1.50rem;
+	font-size: 1.5rem;
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 700;
 }
@@ -63,51 +88,117 @@ img.tools {
 	border-radius: 50px;
 }
 
-@media (min-width: 768px) {
-	img#me {width: 300px; height: 300px; margin-bottom: 50px;}
-	#description h2 {font-size: 3rem;}
-	#description h5 {font-size: 2rem;}
-	#description p {font-size: 1.5rem;}
-	#navbars {font-size: 20px;}
+/*Skills Section*/
+#workexp h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
 }
 
-@media (min-width: 960px) {
+#workexp h2 {
+	font-size: 1.5rem;
+	margin-top: 13px;
+}
+
+#workexp h4 {
+	font-size: 1.1rem;
+}
+
+#workexp p {
+	font-size: 1rem;
+}
+
+#workexp , #tools {
+	margin-top: 54px;
+	color: #200031;
+	text-align: center;
+}
+
+
+/*#workexp h1 {
+	text-align: center;
+}
+
+#workexp h2 , #workexp h4 , #workexp p {
+	padding-left: 10%;	
+}
+
+#tools h1 {
+	padding-bottom: 30px;
+}
+
+#toolimg {
+	margin-bottom: 168px;
+}
+
+#skills {
+	font-family: 'Copse', serif;
+}*/
+
+
+
+
+/*Responsive*/
+@media (min-width: 760px) and (max-width: 920px) {
+	#description {padding: 130px 0;}
+	img#me {width: 300px; height: 300px; padding: 30px; margin: 80px 0 0;}
+	#description h2 {text-align: left; font-size: 2rem;}
+	#description h5 {text-align: left; font-size: 1rem;}
+	#description p {text-align: left; font-size: 0.75rem;}
+	#navbars {font-size: 20px;}
+	#skills {height: 100vh;}
+}
+
+@media (min-width: 921px) {
+	/*greetings section*/
 	#description {padding: 30px;}
-	img#me {width: 350px; height: 350px; padding: 30px; margin: 30px 0 0; margin-right: 3%;}
-	#intro {padding-top: 4%;}
-	#description h2 , #description h5 {text-align: left;}
-	#description p {text-align: left; max-width: 500px;}
+	img#me {width: 300px; height: 300px; padding: 30px; margin: 30px 3% 0 0;}
+	#description h2 {text-align: left; font-size: 3rem;}
+	#description h5 {text-align: left; font-size: 2rem;}
+	#description p {text-align: left; font-size: 1.5rem; max-width: 500px;}
 	#button {font-size: 1.5rem;}
 	#navbars {font-size: 20px;}
+	/*skills section*/
+	#workexp h1 {text-align: center;}
+	#workexp h2 , #workexp h4 , #workexp p {padding-left: 10%; text-align: left;}
+	#tools h1 {padding-bottom: 30px;}
+	#toolimg {margin-bottom: 168px;}
+	#skills {font-family: 'Copse', serif;}
+	#workexp , #tools {width: 40vw;}
 }
 
 @media (min-width: 1200px) {
 	#description {padding: 30px;}
 	img#me {width: 350px; height: 350px; padding: 30px; margin: 30px 0 0; margin-right: 7%;}
-	#intro {padding-top: 4%;}
 	#description h2 , #description h5 {text-align: left;}
 	#description p {text-align: left; max-width: 500px;}
 	#button {font-size: 1.5rem;}
 }
 
-@media (min-height: 1300px) {
-	#landing , #skills , #portfolio , #contact {height: 50vh;}
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 	#navbars {font-size: 20px;}
 }
 
-@media (min-width: 1800px) and (min-height: 900px) {
+@media (min-width: 1400px) {
 	#description {padding: 100px;}
 	img#me {width: 350px; height: 350px; padding: 30px; margin: 100px 0 0; margin-right: 7%;}
-	#intro {padding-top: 4%;}
 	#description h2 {text-align: left;}
 	#description h5 {text-align: left;}
 	#description p {text-align: left; max-width: 600px;}
 	#button {font-size: 2rem;}
+	/*skills section*/
+	#skills {height: 100vh;}
+}
+
+@media (min-height: 900px) {
+	#skills {padding-top: 10%;}
+}
+
+@media (min-height: 1365px) {
+	#landing , #skills , #portfolio , #contact {height: 50vh;}
+	#skills {padding-top: 40px;}
 }
 
 @media (max-height: 570px) {
 	#landing , #skills , #portfolio , #contact {padding-top: 20px;}
+	#workexp , #tools {padding-top: 50px;}
 }

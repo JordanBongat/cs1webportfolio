@@ -15,6 +15,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Copse&family=Manjari&display=swap" rel="stylesheet">
 
 	<title>Jordan Bongat Web Portfolio</title>
 </head>
@@ -26,9 +32,9 @@
     <a href="#contact" id="navbars">Contact</a>
   </nav>
 
-  <div id="landing" class="container-fluid">
+  <div id="landing" class="container-fluid d-flex flex-column justify-content-center">
     <div id="intro" class="d-flex justify-content-center flex-wrap">
-      <img id="me" src="./assets/images/jordan.jpg" class="rounded-circle image-fluid" alt="image unavailable">
+      <img id="me" src="./assets/images/jordan.jpg" class="rounded-circle" alt="image unavailable">
       <div id="description">
         <h2 class="mb-3 mt-1">Hello! I'm Jordan</h2>
         <h5 class="mb-2">Front-end Web Developer</h5>
@@ -42,78 +48,113 @@
     </div>
   </div>
 
-  <div id="skills">
-    
+  <div id="skills" class="container-fluid d-flex flex-wrap justify-content-center">
+    <div id="workexp" class="d-flex flex-column">
+      <h1>Work Experiences</h1>
+      <h2>Becommviral Inc.</h2>
+      <h4>Sales Associate (2019-2021)</h4>
+      <p>Managing store to provide sales for the company</p>
+      <h2>Vishay Intertechnology</h2>
+      <h4>Production Oprtr. (2018-2019)</h4>
+      <p>Operating machines for production of electronic devices and making sure that every devices produce is of high quality.</p>
+      <h2>LAI Philippines Inc.</h2>
+      <h4>CSA (2017-2018)</h4>
+      <p>Attending to customer needs and concerns, giving them the best services for their great satisfaction.</p>
+    </div>
+    <div id="tools" class="d-flex flex-column">
+      <div class="d-flex justify-content-center">
+        <h1>Skills</h1>
+      </div>
+      <div id="toolimg" class="d-flex flex-wrap justify-content-center">
+        <div>
+          <img class="tools" src="./assets/images/logo-html5.png" alt="no image">
+          <h6 class="text-center">HTML</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-css3.png" alt="no image">
+          <h6 class="text-center">CSS</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-bootstrap.png" alt="">
+          <h6 class="text-center">Bootstrap</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-sublime-text-3.png" alt="no image">
+          <h6 class="text-center">Sublime</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-git.png" alt="no image">
+          <h6 class="text-center">Git</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-gitlab-ci-cd.png" alt="no image">
+          <h6 class="text-center">Gitlab</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-javascript.png" alt="no image">
+          <h6 class="text-center">Javascript</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-expressjs.png" alt="no image">
+          <h6 class="text-center">Expressjs</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-heroku.png" alt="no image">
+          <h6 class="text-center">Heroku</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-mongodb.png" alt="no image">
+          <h6 class="text-center">Mongodb</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-nodejs.png" alt="no image">
+          <h6 class="text-center">Nodejs</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-postman.png" alt="no image">
+          <h6 class="text-center">Postman</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-react.png" alt="no image">
+          <h6 class="text-center">React</h6>
+        </div>
+        <div>
+          <img class="tools" src="./assets/images/logo-rest.png" alt="no image">
+          <h6 class="text-center">Rest</h6>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="portfolio">
     
   </div>
 
-  <div id="contact">
-    
+  <div id="contact" class="container-fluid d-flex flex-column justify-content-center">
+    <div class="d-flex justify-content-center">
+      <h2>Message Me</h2>
+    </div>
+    <div>
+      <form>
+        <div class="form-group">        
+          <label for="fullname" class="mb-3">Full Name</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email" class="mb-3">Email Address</label>
+          <input type="email" class="form-control">
+        </div>        
+        <div class="form-group">        
+          <label for="message" class="mb-3">Message</label>
+          <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success btn-block mt-3">Submit</button>
+      </form>
+    </div>
+    <div id="foot">
+      <p>Copyright &#169; 2021 Jordan Bongat, All rights reserved</p>
+    </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-	<!-- <div class="container-fluid mt-4">
-      <div class="container">
-        <img src="./assets/images/jordan.jpg" class="rounded-circle" alt="image unavailable">
-      </div>
-      <div class="container">
-        <h1>Jordan Bongat</h1>
-        <h3>Full-Stack Web Developer</h3>
-      </div>
-
-      <p class="text-justify p-3">
-        Hello, My name is Jordan but you can call me Dan. I am currently studying about Web Development Course at Zuitt to become a Full Stack Web Developer in the future and to land a job that will challenge my skill and help me grow and learn.
-      </p>
-  </div> -->
-
-      <!-- Tools Section -->
-      <!-- <h2 class="text-center">Tools</h2>
-      <div class="mt-2 d-flex justify-content-center flex-wrap">
-        <img class="tools" src="./assets/images/logo-bootstrap.png" alt="">
-        <img class="tools" src="./assets/images/logo-css3.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-expressjs.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-git.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-gitlab-ci-cd.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-heroku.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-html5.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-javascript.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-mongodb.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-nodejs.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-postman.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-react.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-rest.png" alt="no image">
-        <img class="tools" src="./assets/images/logo-sublime-text-3.png" alt="no image">
-      </div>
-
-      <div class="p-4">
-        <h2 class="text-center">Contact</h2>
-        <form>
-          <div class="form-group">        
-            <label for="fullname" class="mb-3">Full Name</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="email" class="mb-3">Email Address</label>
-            <input type="email" class="form-control">
-          </div>        
-          <div class="form-group">        
-            <label for="message" class="mb-3">Message</label>
-            <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
-          </div>
-          <button type="submit" class="btn btn-success btn-block mt-3">Submit</button>
-        </form>
-      </div> -->
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

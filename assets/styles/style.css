@@ -2,11 +2,13 @@
 	margin: 0;
 	padding: 0;
 	border-style: border-box;
+	scroll-behavior: smooth;
 } 
 
-img {
+img#me {
 	width: 200px;
-	height: 200px;
+	height:200px;
+	margin: 14% 100px;
 }
 
 img.tools {
@@ -14,23 +16,98 @@ img.tools {
 	height: 80px;
 }
 
+#nav {
+	position: scroll;
+	background-color: #003B6D;
+	max-width: 100%;
+	position: fixed;
+}
+
 #navbars {
 	font-size: 15px;
 	color: white;
-	padding: 1rem 0.4rem 0;
+	padding: 1rem 0.4rem;
 }
 
-p.navbars {
-	display: inline;
-}
-
-div#nav {
-	background-color: #003B6D;
-}
-
-#main {
-	background-image: url(https://images.pexels.com/photos/768938/pexels-photo-768938.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+#landing , #skills , #portfolio , #contact {
+	background-image: url(../images/background.png);
 	height: 100vh;
 	background-size: 100% 100%;
 	background-attachment: fixed;
+	padding-top: 54px;
+	max-width: 100%;
+}
+
+#description h2 {
+	text-align: center;
+	font-size: 1.50rem;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+}
+
+#description h5 {
+	text-align: center;
+	font-size: 1rem;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 600;
+}
+
+#description p {
+	text-align: center;
+	font-size: 0.8rem;
+	font-family: 'Merriweather', serif;
+	max-width: 400px;
+}
+
+#button {
+	border-radius: 50px;
+}
+
+@media (min-width: 768px) {
+	img#me {width: 300px; height: 300px; margin-bottom: 50px;}
+	#description h2 {font-size: 3rem;}
+	#description h5 {font-size: 2rem;}
+	#description p {font-size: 1.5rem;}
+	#navbars {font-size: 20px;}
+}
+
+@media (min-width: 960px) {
+	#description {padding: 30px;}
+	img#me {width: 350px; height: 350px; padding: 30px; margin: 30px 0 0; margin-right: 3%;}
+	#intro {padding-top: 4%;}
+	#description h2 , #description h5 {text-align: left;}
+	#description p {text-align: left; max-width: 500px;}
+	#button {font-size: 1.5rem;}
+	#navbars {font-size: 20px;}
+}
+
+@media (min-width: 1200px) {
+	#description {padding: 30px;}
+	img#me {width: 350px; height: 350px; padding: 30px; margin: 30px 0 0; margin-right: 7%;}
+	#intro {padding-top: 4%;}
+	#description h2 , #description h5 {text-align: left;}
+	#description p {text-align: left; max-width: 500px;}
+	#button {font-size: 1.5rem;}
+}
+
+@media (min-height: 1300px) {
+	#landing , #skills , #portfolio , #contact {height: 50vh;}
+}
+
+@media (min-width: 1200px) {
+	#navbars {font-size: 20px;}
+}
+
+@media (min-width: 1800px) and (min-height: 900px) {
+	#description {padding: 100px;}
+	img#me {width: 350px; height: 350px; padding: 30px; margin: 100px 0 0; margin-right: 7%;}
+	#intro {padding-top: 4%;}
+	#description h2 {text-align: left;}
+	#description h5 {text-align: left;}
+	#description p {text-align: left; max-width: 600px;}
+	#button {font-size: 2rem;}
+}
+
+@media (max-height: 570px) {
+	#landing , #skills , #portfolio , #contact {padding-top: 20px;}
 }

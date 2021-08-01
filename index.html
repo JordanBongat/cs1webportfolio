@@ -4,9 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- bootstrap cdn -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+  <!-- external css -->
 	<link rel="stylesheet" href="./assets/styles/style.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="https://img.icons8.com/emoji/48/000000/pisces-emoji.png">
+
+  <!-- AOS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +29,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Copse&family=Manjari&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@1,500&family=Stoke:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
 
 	<title>Jordan Bongat Web Portfolio</title>
 </head>
@@ -36,7 +50,7 @@
     <div id="intro" class="d-flex justify-content-center flex-wrap">
       <img id="me" src="./assets/images/jordan.jpg" class="rounded-circle" alt="image unavailable">
       <div id="description">
-        <h2 class="mb-3 mt-1">Hello! I'm Jordan</h2>
+        <h1 class="mb-3 mt-1">Hello! I'm Jordan</h1>
         <h5 class="mb-2">Front-end Web Developer</h5>
         <p>Hello!, My name is Jordan Bongat. I am a Front-end Web Developer. I am currently studying at Zuitt to become a Full Stack Web Developer in the future and to land a job that will challenge my skill and help me grow and learn.</p>
       </div>
@@ -49,18 +63,6 @@
   </div>
 
   <div id="skills" class="container-fluid d-flex flex-wrap justify-content-center">
-    <div id="workexp" class="d-flex flex-column">
-      <h1>Work Experiences</h1>
-      <h2>Becommviral Inc.</h2>
-      <h4>Sales Associate (2019-2021)</h4>
-      <p>Managing store to provide sales for the company</p>
-      <h2>Vishay Intertechnology</h2>
-      <h4>Production Oprtr. (2018-2019)</h4>
-      <p>Operating machines for production of electronic devices and making sure that every devices produce is of high quality.</p>
-      <h2>LAI Philippines Inc.</h2>
-      <h4>CSA (2017-2018)</h4>
-      <p>Attending to customer needs and concerns, giving them the best services for their great satisfaction.</p>
-    </div>
     <div id="tools" class="d-flex flex-column">
       <div class="d-flex justify-content-center">
         <h1>Skills</h1>
@@ -124,41 +126,90 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div id="portfolio">
-    
-  </div>
-
-  <div id="contact" class="container-fluid d-flex flex-column justify-content-center">
-    <div class="d-flex justify-content-center">
-      <h2>Message Me</h2>
+    <div id="workexp" class="d-flex flex-column">
+      <h1>Work Experiences</h1>
+      <h2>Becommviral Inc.</h2>
+      <h4>Sales Associate (2019-2021)</h4>
+      <p>Managing store and attending to customers questions and concerns about products.</p>
+      <h2>Vishay Intertechnology</h2>
+      <h4>Production Oprtr. (2018-2019)</h4>
+      <p>Operating machines for production of electronic devices and making sure that every devices produce is of high quality.</p>
+      <h2>LAI Philippines Inc.</h2>
+      <h4>CSA (2017-2018)</h4>
+      <p>Attending to customer needs and concerns, giving them the best services for their great satisfaction.</p>
     </div>
-    <div>
-      <form>
-        <div class="form-group">        
-          <label for="fullname" class="mb-3">Full Name</label>
-          <input type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="email" class="mb-3">Email Address</label>
-          <input type="email" class="form-control">
-        </div>        
-        <div class="form-group">        
-          <label for="message" class="mb-3">Message</label>
-          <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success btn-block mt-3">Submit</button>
-      </form>
+  </div>
+
+  <div id="portfolio" class="d-flex flex-column justify-content-center">
+    <div id="activities">
+      <h1>Activities</h1>
+    </div>
+    <div id="scrnshots" class="container-fluid d-flex flex-row flex-wrap"> 
+      <div data-aos="fade-up" data-aos-duration="1500">
+        <a href="./assets/files/profile/index.html"><img src=".//assets/images/profilebootstrap.jpg" alt=""></a>
+        <h2>Profile using bootstrap</h2>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <a href="./assets/files/zuitt/index.html"><img src=".//assets/images/zuitthomepage.jpg" alt=""></a>
+        <h2>Zuitt Homepage Activity</h2>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="2500">
+        <a href="./assets/files/convo/index.html"><img src="./assets/images/conversation.jpg" alt=""></a>
+        <h2>Conversation Sample</h2>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <a href="./assets/files/reinforcement/index.html"><img src=".//assets/images/Reinforcement3.jpg" alt=""></a>
+        <h2>Reinforcement 3</h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="container d-flex flex-column justify-content-center">
+    <div id="forbigscrn">
+      <div class="d-flex justify-content-center">
+        <h2>Send me a message</h2>
+      </div>
+      <div>
+        <form action="mailto:bongatjordan2@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">        
+            <label for="fullname" class="mb-3">Full Name:</label>
+            <input type="text" name="Name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="mb-3">Email Address:</label>
+            <input type="email" name="Mail" class="form-control" required>
+          </div>        
+          <div class="form-group">        
+            <label for="message" class="mb-3">Message:</label>
+            <textarea name="message" name="Message"  id="" cols="30" rows="5" class="form-control" required></textarea>
+          </div>
+          <div id="buttons">
+            <div>
+              <button id="send" type="submit" class="btn btn-primary btn-block">Send</button>
+            </div>
+            <div>
+              <button id="clear" type="reset" class="btn btn-dark btn-block">Clear Form</button>  
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <div id="foot">
       <p>Copyright &#169; 2021 Jordan Bongat, All rights reserved</p>
     </div>
   </div>
+
+  <!-- AOS Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -1,0 +1,370 @@
+/*file structure formatting*/
+	/*1.__*/
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: GFSmith, sans-serif;
+		font-weight: 400;
+		scroll-behavior: smooth; 
+	}
+
+/*top component formatting*/
+	/*2.__*/ 
+	#bootcamp {
+		text-align: center;
+		background-color: #F2F2F2;  
+		padding: 15px; 
+	}
+
+	/*3.__*/  /*4.__*/ 
+	#bootcamp span {
+	   text-transform: uppercase; 
+	   font-size: 12px;
+	   line-height: 18px; 
+	   letter-spacing: 0.3rem;
+	   width: 100%;
+	}
+
+	body{
+	    min-height: 100vh;
+	    display: flex;
+	    flex-direction: column;
+	}
+
+/*header component formatting*/
+	body > /*5.__*/header  /*6.__*/> /*7.__*/.header_scope {
+		background: url("https://images.pexels.com/photos/6009265/pexels-photo-6009265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+		background-size: cover; 
+		background-repeat: no-repeat;
+		height: 120vh;
+	}
+
+/*navbar component formatting*/	
+	/*8.__*/header .AppHeaderNav_list {
+		display: inline-flex;
+		list-style-type: none; 
+	}
+
+	header /*9.__*/.AppHeaderNav_brand {
+		padding: 22px 25px 20px 50px; 
+		text-transform: uppercase;
+		font-weight: 800;
+		font-family: 'STIX Two Math', serif;
+		font-size: 20px; 
+	}
+
+	/*10.__*//*11.__*//*12.__*/ 
+	header div .AppHeaderNav_item {
+		padding: 25px 15px 20px 40px;
+		text-transform: uppercase;
+		font-size: 12px;
+	    line-height: 18px; 
+	    letter-spacing: 0.3rem; 
+	}
+
+	/*13.__*/  /*14.__*/ 
+	header .AppHeaderNav_link {
+		text-decoration: none;
+		color: #000000;
+		cursor: pointer;
+	}
+
+	/*section hero_container format*/
+	.header_scope /*15.__*/> .hero_container { 
+		padding: 6.5rem 80px 0rem 7rem;
+		position: sticky;
+	}    
+
+	/*16.__*/header /*17__*/.header_scope .hero_container > /*18.__*/.hero_title_0 {
+		font-size: 45px; 
+		font-family: 'STIX Two Math', serif;
+		line-height: 1;
+	}
+
+	.header_scope  .hero_container > .hero_title_1 {
+		font-size: 75px; 
+		font-family: 'STIX Two Math', serif;
+		line-height: 1;
+		letter-spacing: 1.8rem; 
+	}
+
+	.AppHeader_wrapper > .header_scope /*19.__*/.subtext {
+		font-family: 'STIX Two Math', serif; 
+		padding-top: 60px;
+		font-weight: 700;
+	}
+
+	/*20.__*/header > .header_scope /*21.__*/> #page_feature {	
+		position: sticky;
+		height: 100vh;
+	}
+
+	.AppHeader_wrapper /*23.__*/#page_feature > /*22.__*/.page_feature_title {
+		padding: 5px 5px 5px 5px;
+		margin: 15rem 10rem 2rem 0px;
+		float: right;
+		width: 25vw; 
+		text-transform: uppercase;
+		font-family: GFSmith, sans-serif;
+		font-size: 12px;
+	    line-height: 1.5; 
+	    letter-spacing: 0.5rem;
+		text-align: center;
+		background-color: #cf0053; 
+		color: white;
+		border: 0;
+		border-radius: 150px; 
+	}
+
+	/*24.__*/header #page_feature /*25.__*/> #page_feature_scroll {
+		padding: 5px 5px 5px 5px;
+		margin: 0rem 10rem 0px 0px;
+		text-decoration: none; 
+		float: right;
+		width: 25vw; 
+		text-transform: uppercase;
+		font-family: GFSmith, sans-serif;
+		font-size: 12px;
+	    line-height: 1; 
+	    letter-spacing: 0.3rem;
+		text-align: center;
+		background-color: #3D5F66; 
+		color: white;
+		border: 0;
+		border-radius: 250px; 
+	}
+
+	.AppHeader_wrapper /*26.__*/#page_feature /*27.__*/> #feature_table {
+		float: right;
+		padding: 0px 5px 5px 5px;
+		margin: 0px 2rem 0rem 0px;
+
+	}
+
+	.AppHeader_wrapper/*28.__*/ #page_feature/*29.__*/ #table_head {
+		text-transform: uppercase;
+		line-height: 2; 
+		letter-spacing: 0.3rem;
+	}
+
+	.AppHeader_wrapper/*30.__*/ #page_feature/*31.__*/ .head_item {
+		font-size: 12px; 
+		padding: 15px 15px 15px 15px;
+		background-color: #cf0053;  
+		font-weight: 700; 
+		color: white;
+	}
+
+	.AppHeader_wrapper #page_feature #table_body {
+		line-height: 2; 
+		letter-spacing: normal;
+		text-align: center;
+		background-color: #93B7BE;
+		text-transform: capitalize; 
+	}
+
+	.AppHeader_wrapper #page_feature .body_item {
+		font-size: 14px;
+		padding: 15px 15px 15px 15px; 
+	}
+
+	.AppHeader_wrapper #page_feature /*32.__*/#item_head  {
+		font-size: 14px;
+		color: white;
+		padding: 15px 15px 15px 15px;
+		font-weight: 700;  
+		font-family: GFSmith, sans-serif;
+		background-color: #3D5F66; 
+		letter-spacing: 1px; 
+	}
+	
+	/*33.__*/header/*34.__*/ #page_feature /*35.__*/#table_foot  {
+		line-height: 3; 
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		margin-bottom: 0rem;
+		text-align: center;
+		background-color: #cf0053; 
+		color: white;
+		font-size: 12px;
+	}
+
+/*main component section*/
+	/*36.__*/main {
+		background: url("https://images.pexels.com/photos/6238297/pexels-photo-6238297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+		background-size: cover; 
+		background-repeat: no-repeat;
+		margin-top: 8rem;
+		height: 140vh; 
+	}
+
+	main /*37.__*/> /*38.__*/#trainers { 
+		margin: 1rem 8rem 3rem 3rem;
+		padding-top: 2rem; 
+		height: 100vh;
+		position: sticky;
+		flex-grow: 1; 
+	}  
+
+	#trainers .page_feature_title { 	
+		text-transform: uppercase;
+		background-color: #cf0053; 
+		line-height: 1s; 
+		letter-spacing: 0.3rem;
+		font-size: 12px; 
+		padding: 8px 15px 8px 25px;
+		background-color: #cf0053; 
+		margin: 13rem 10rem 0px 10px; 
+		font-weight: 500; 
+		color: white;
+		border: 0;
+		width: 25vw; 
+		border-radius: 150px; 
+		text-align: center;
+	} 
+
+	main #trainers /*39.__*/> /*40.__*/.trainer_images  {
+		padding: 20px 20px 20px 20px;	
+		display: inline-flex;
+		width: 3vw; 
+	} 
+
+	.homepage #trainers/*41.__*/ div/*42.__*/ .trainer_image {
+		height: 20rem;
+		width: 15rem; 
+		border: 1;
+		border-radius: 350px;  
+		margin: 2rem 1rem 4rem 1rem;
+		border: 4px solid white;
+	} 
+
+	/*43.__*/.homepage /*44.__*/section > a {
+		padding: 5px 5px 5px 5px;
+		margin: 24rem 0rem 1px 5px;
+		text-decoration: none; 
+		float: right;
+		width: 25vw; 
+		text-transform: uppercase;
+		font-family: GFSmith, sans-serif;
+		font-size: 12px;
+	    line-height: 1; 
+	    letter-spacing: 0.3rem;
+		text-align: center;
+		background-color: #3D5F66; 
+		color: white;
+		border: 0;
+		border-radius: 250px; 
+	}  
+
+	.homepage #trainees { 	
+		margin: 1rem 13rem 3rem 15rem;
+		padding-top: 2rem; 
+		height: 100vh;
+		position: sticky;
+		float: right;	
+	} 
+
+	#trainees /*45.__*/> .page_feature_title { 	
+		text-transform: uppercase;
+		background-color: #cf0053; 
+		line-height: 1s; 
+		letter-spacing: 0.3rem;
+		font-size: 12px; 
+		padding: 8px 15px 8px 25px;
+		background-color: #cf0053; 
+		font-weight: 500; 
+		color: white;
+		border: 0;
+		width: 25vw; 
+		border-radius: 150px; 
+		text-align: center;
+	} 
+
+	#trainees > #students {
+	   border: 1px solid #ddd;
+	   margin-top: 25px;
+	   border-radius: 4px;
+	   padding: 5px;
+	   width: 550px;
+	}
+
+	#trainees > #trainee_message {
+	   margin-top: 25px;
+	   border-radius: 4px;
+	   padding: 5px;
+	   width: 550px;
+	   font-size: 75px; 
+	   font-family: 'STIX Two Math', serif;
+	   line-height: 1;
+	   letter-spacing: 1.8rem; 
+	}
+
+	main #trainees > a {
+		padding: 5px 5px 5px 5px;
+		margin: 5rem 0rem 1px 5px;
+		text-decoration: none; 
+		float: right;
+		width: 25vw; 
+		text-transform: uppercase;
+		font-family: GFSmith, sans-serif;
+		font-size: 12px;
+	    line-height: 1; 
+	    letter-spacing: 0.3rem;
+		text-align: center;
+		background-color: #3D5F66; 
+		color: white;
+		border: 0;
+		border-radius: 250px; 
+	}
+
+/*footer component section*/
+	.footer {
+		margin-top: 50rem;
+		text-align: center;
+		background-color: #F2F2F2;  
+		padding: 15px; 
+		position: fixed-bottom;
+		bottom: 0;
+	   text-transform: uppercase; 
+	   font-size: 5px;
+	   line-height: 5px; 
+	   letter-spacing: 0.3rem;
+	   width: 100%;	   
+	   height: 50vh; 
+	}
+
+	.footer > .contact_details {
+		margin-top: 20px; 
+		line-height: 5px; 
+	}
+
+
+	.contact_details .square-button {
+	  margin-top: 12px; 
+	  background-color: #04AA6D;
+	  color: white; 
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+
+	.footer > .contact_details #message{
+		margin-top: 40px; 
+		line-height: 10px; 
+		font-size: 25px;
+		background-color: #cf0053; 
+		line-height: 1s; 
+		letter-spacing: 0.3rem;
+		border-radius: 150px; 
+	}
+
+
+
+
+
+
+
+ 
+

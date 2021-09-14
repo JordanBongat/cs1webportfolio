@@ -21,8 +21,9 @@ img.tools {
 #nav {
 	position: scroll;
 	background-color: #003B6D;
-	max-width: 100%;
+	width: 100%;
 	position: fixed;
+	z-index: 1;
 }
 
 #navbars {

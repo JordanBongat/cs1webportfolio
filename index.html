@@ -40,27 +40,26 @@
 </head>
 <body>
 
-  <ul class="nav nav-tabs nav-fill" id="nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#landing" id="navbars">Greetings</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#skills" id="navbars">Skills</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#portfolio" id="navbars">Portfolio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#contact" id="navbars">Contact</a>
-    </li>
-  </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark d-flex" id="nav">
+    <a class="navbar-brand" href="#landing" id="navbars">Greetings</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navs" aria-controls="navs" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <!-- <nav id="nav" class="container d-flex">
-    <a href="#landing" id="navbars">Greetings</a>
-    <a href="#skills" class="ml-auto" id="navbars">Skills</a>
-    <a href="#portfolio" id="navbars">Portfolio</a>
-    <a href="#contact" id="navbars">Contact</a>
-  </nav> -->
+    <div class="collapse navbar-collapse align-items-center" id="navs">
+      <ul class="navbar-nav ml-lg-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#skills" id="navbars">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio" id="navbars">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" id="navbars">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <div id="landing" class="container-fluid d-flex flex-column justify-content-center">
     <div id="intro" class="d-flex justify-content-center flex-wrap">
@@ -188,7 +187,7 @@
           <h4>Web API (Ecommerce)</h4>
           <p>work in progress</p>
         </div>
-        <div class="ml-md-0" data-aos="fade-left" data-aos-duration="2000">
+        <div class="ml-md-0"> <!--data-aos="fade-left" data-aos-duration="2000"-->
           <img src="https://www.cloudways.com/blog/wp-content/uploads/Rest-API-introduction.jpg" alt="">
         </div>      
       </div>
@@ -198,7 +197,7 @@
           <h4>React Frontend (Ecom)</h4>
           <p>work in progress</p>
         </div>
-        <div class="ml-md-0" data-aos="fade-left" data-aos-duration="2000">
+        <div class="ml-md-0"> <!--data-aos="fade-left" data-aos-duration="2000"-->
           <img src="https://d6vdma9166ldh.cloudfront.net/media/images/1455b5c8-4887-43a8-8214-de77543414c9.jpg" alt="">
         </div>
       </div>
@@ -235,19 +234,30 @@
         </form>
       </div>
     </div>
-    <div id="foot">
-      <div class="d-flex flex-wrap justify-content-center"> 
-        <img src="https://img.icons8.com/material/24/000000/phone--v1.png"/>
-        <span>+639164841695</span>
-        <img src="https://img.icons8.com/material/24/000000/new-post--v1.png"/>
-        <span>bongatjordan2@gmail.com</span>
-        <a href="https://t.me/jordanbongat"><img src="https://img.icons8.com/material/24/000000/filled-sent.png"/></a>
-        <a href="https://github.com/JordanBongat"><img src="https://img.icons8.com/material/24/000000/github.png"/></a>
-        <a href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin"><img src="https://img.icons8.com/material/24/000000/linkedin--v1.png"/></a>
-      </div>
-      <p>Copyright &#169; 2021 Jordan Bongat, All rights reserved</p>
-    </div>
   </div>
+
+  <footer id="foot" class="container-fluid text-light bg-dark row">
+    <div class="d-flex justify-content-center align-items-center col"> 
+      <img src="https://img.icons8.com/material/24/000000/phone--v1.png"/>
+      <span class="mr-lg-3">+639164841695</span>
+      <img src="https://img.icons8.com/material/24/000000/new-post--v1.png"/>
+      <span>bongatjordan2@gmail.com</span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center col">
+      <a class="mr-lg-3" href="https://t.me/jordanbongat" target="blank">
+        <img src="https://img.icons8.com/material/24/000000/filled-sent.png"/>
+      </a>
+      <a class="mr-lg-3" href="https://github.com/JordanBongat" target="blank">
+        <img src="https://img.icons8.com/material/24/000000/github.png"/>
+      </a>
+      <a href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin" target="blank">
+        <img src="https://img.icons8.com/material/24/000000/linkedin--v1.png"/>
+      </a>
+    </div>
+    <div class="d-flex justify-content-center align-items-center col">
+      <span>Copyright &#169; 2021 Jordan Bongat, All rights reserved</span>
+    </div>
+  </footer>
 
   <!-- AOS Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

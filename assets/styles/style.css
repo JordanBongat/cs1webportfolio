@@ -33,6 +33,36 @@ img.tools {
 	padding: 1rem 0.4rem;
 }
 
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 35%;
+        height: 100%;
+		background-color: #003a6d9f;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -35%;
+        transition: height 0s ease;
+		padding-top: 30px;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+		padding-top: 30px;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+}
+
 /*Greetings Section*/
 
 #landing {
@@ -63,7 +93,7 @@ img.tools {
 #contact {
 	background-color: #676767;
 	color: white;
-	height: 100vh;
+	height: 90vh;
 	background-size: 100% 100%;
 	background-attachment: fixed;
 	padding-top: 70px;
@@ -98,7 +128,6 @@ img.tools {
 
 #button {
 	border-radius: 50px;
-	background-color: ;
 }
 
 /*Skills Section*/
@@ -173,8 +202,9 @@ img.tools {
 /*footer*/
 #foot {
 	font-size: 0.7rem;
-	margin-top: 20px;
 	font-family: 'Manjari', sans-serif;
+	padding: 15px;
+	margin: auto;
 }
 
 /*Responsive*/
@@ -261,7 +291,7 @@ img.tools {
 	#portfolio h2 {font-size: 1.3rem;}
 	#portfolio img {width: 230px; margin: 15px 0 0;}
 	#contact h2 {font-size: 1.5rem;}
-	#foot {font-size: 0.6rem;}
+	/* #foot {font-size: 0.6rem;} */
 	#portfolio {padding-top: 54px;}
 	#contact {padding-top: 70px;}
 }

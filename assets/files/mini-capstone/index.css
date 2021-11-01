@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#startButton {
+	position: absolute;
+	bottom: 18vh;
+	left: 41vw;
+}
+
+#volcano {
+	background: url("./images/volcano.png");
+	background-size: cover;
+}
+
+#backyard {
+	background: url("./images/backyard.png");
+	background-size: cover;
+}
+
+#forest {
+	background: url("./images/gym.png");
+	background-size: cover;
+}
+
+#ice {
+	background: url("./images/ice.png");
+	background-size: cover;
+}
+
+#sky {
+	background: url("./images/sky.png");
+	background-size: cover;
+}
+
+#copyright {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	color: white;
+	font-size: 12px;
+}
+
+body {
+	color: white;
+	background: url("./images/background.jpg");
+	background-size: cover;
+	text-shadow: 2px 2px 4px #000;
+	font-family: 'Azeret Mono', monospace;
+}
+
+footer #disclaimer {
+	font-size: 10px;
+}

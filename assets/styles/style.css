@@ -88,6 +88,7 @@ img.tools {
 	background-attachment: fixed;
 	max-width: 100%;
 	padding-top: 54px;
+	height: 100vh;
 }
 
 #contact {
@@ -176,12 +177,23 @@ img.tools {
 	margin-bottom: 0;
 }
 
-#portfolio h2 {
-	font-size: 1.8rem;
+#portfolio * {
+	/* font-size: 1.8rem; */
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 20px;
 	font-family: 'Petrona', serif;
+}
+
+#scrnshots img {
+	height: 150px;
+	width: 300px;
+	transition: width 300ms, height 300ms ;
+}
+
+#scrnshots img:hover {
+	height: 180px;
+	width: 360px;
 }
 
 /*contact section*/

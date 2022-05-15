@@ -297,15 +297,18 @@ img.tools {
 	#workexp , #tools {padding-top: 50px;}
 }
 
-@media (min-width: 270px) and (max-width: 360px) {
+@media (min-width: 270px) and (max-width: 600px) {
 	#nav {padding-left: 7px; padding-right: 7px;}
 	#portfolio h1 {font-size: 2rem;}
 	#portfolio h2 {font-size: 1.3rem;}
 	#portfolio img {width: 230px; margin: 15px 0 0;}
 	#contact h2 {font-size: 1.5rem;}
+	/* #portfolio #activities {margin-top: 250px;} */
 	/* #foot {font-size: 0.6rem;} */
-	#portfolio {padding-top: 54px;}
+	#portfolio {padding-top: 54px; height: 140vh;}
 	#contact {padding-top: 70px;}
+	#portfolio #scrnshots {margin-top: 0;}
+	#portfolio #activities {margin-bottom: 0; margin-top: 30px;}
 }
 
 @media (min-width: 690px) {
